@@ -41,8 +41,15 @@
         under: under {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp UNDER>;
+            bindings = <&kp LS(INT_RO)>;
             label = "UNDER";
+        };
+
+        new_macro_under: new_macro_under {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "NEW_MACRO_UNDER";
         };
     };
 
