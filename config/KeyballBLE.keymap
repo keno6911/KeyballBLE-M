@@ -115,10 +115,10 @@
 
         layer_6 {
             bindings = <
-&kp ESC    &kp F2    &kp UP_ARROW  &kp F5     &trans     &trans                       &kp N7  &kp N8  &kp N9  &kp AT_SIGN  &kp NON_US_BACKSLASH  &trans
-&kp GRAVE  &kp LEFT  &kp DOWN      &kp RIGHT  &mkp LCLK  &trans     &trans    &trans  &kp N4  &kp N5  &kp N6  &kp LBKT     &kp RBKT              &trans
-&trans     &trans    &kp SEMI      &kp APOS   &kp MINUS  &kp EQUAL  &trans    &kp N0  &kp N1  &kp N2  &kp N3  &kp COMMA    &kp DOT               &trans
-&trans     &trans    &trans        &trans     &trans     &trans     &trans    &trans  &trans                               &trans                &trans
+&kp ESC    &kp F2    &kp UP_ARROW  &kp F5     &trans     &trans                        &kp N7  &kp N8  &kp N9  &kp AT_SIGN  &kp NON_US_BACKSLASH  &trans
+&kp GRAVE  &kp LEFT  &kp DOWN      &kp RIGHT  &mkp LCLK  &trans     &trans    &kp DOT  &kp N4  &kp N5  &kp N6  &kp LBKT     &kp RBKT              &trans
+&trans     &trans    &kp SEMI      &kp APOS   &kp MINUS  &kp EQUAL  &trans    &kp N0   &kp N1  &kp N2  &kp N3  &kp COMMA    &kp DOT               &trans
+&trans     &trans    &trans        &trans     &trans     &trans     &trans    &trans   &trans                               &trans                &trans
             >;
         };
     };
