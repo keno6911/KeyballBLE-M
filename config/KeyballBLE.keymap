@@ -138,7 +138,7 @@
             bindings = <
 &kp ESC    &kp F2    &kp UP_ARROW  &kp F5     &trans     &trans                        &kp N7  &kp N8  &kp N9  &kp LBKT    &kp INT_YEN  &trans
 &kp GRAVE  &kp LEFT  &kp DOWN      &kp RIGHT  &mkp LCLK  &trans     &trans    &kp DOT  &kp N4  &kp N5  &kp N6  &kp RBKT    &enmark      &trans
-&trans     &trans    &kp SEMI      &kp APOS   &kp MINUS  &kp EQUAL  &trans    &kp N0   &kp N1  &kp N2  &kp N3  &kp PERIOD  &kp LS(RO)   &trans
+&trans     &trans    &kp SEMI      &kp APOS   &kp MINUS  &kp EQUAL  &trans    &kp N0   &kp N1  &kp N2  &kp N3  &kp PERIOD  &under       &trans
 &trans     &trans    &trans        &trans     &trans     &trans     &trans    &trans   &trans                              &kp PERIOD   &trans
             >;
         };
