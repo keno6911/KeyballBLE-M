@@ -64,13 +64,6 @@
 
             tap-ms = <20>;
         };
-
-        new_______behavior: new_______behavior {
-            compatible = "zmk,behavior-key-repeat";
-            label = "NEW_______BEHAVIOR";
-            #binding-cells = <0>;
-            usage-pages = _;
-        };
     };
 
     keymap {
