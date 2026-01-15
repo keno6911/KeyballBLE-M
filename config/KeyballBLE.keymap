@@ -129,10 +129,10 @@
 
         hidari {
             bindings = <
-&mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                         &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp LEFT_BRACKET   &kp INT_YEN
-&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER           &msc SCRL_UP    &trans    &trans      &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET  &enmark
-&trans            &kp SEMI  &kp APOS      &kp MINUS  &kp EQUAL           &msc SCRL_DOWN  &trans    &kp PERIOD  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans             &trans
-&trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans      &trans                                               &trans             &trans
+&mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                     &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LBKT  &kp INT_YEN  &trans
+&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER           &msc SCRL_UP    &trans    &trans  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp RBKT  &enmark      &trans
+&trans            &kp SEMI  &kp APOS      &kp MINUS  &kp EQUAL           &msc SCRL_DOWN  &trans    &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp SEMI  &kp APOS     &trans
+&trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans  &trans                                                          &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
@@ -140,10 +140,10 @@
 
         migi {
             bindings = <
-&mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                         &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp MINUS     &kp LS(MINUS)
-&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER           &msc SCRL_UP    &trans    &trans      &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(SEMI)  &kp LS(APOS)
-&trans            &kp SEMI  &kp APOS      &kp MINUS  &kp EQUAL           &msc SCRL_DOWN  &trans    &kp PERIOD  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp FSLH      &kp MINUS
-&trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans      &trans                                               &trans        &trans
+&mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                         &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp MINUS     &trans
+&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER           &msc SCRL_UP    &trans    &trans      &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(SEMI)  &trans
+&trans            &kp SEMI  &kp APOS      &kp MINUS  &kp EQUAL           &msc SCRL_DOWN  &trans    &kp PERIOD  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp FSLH      &trans
+&trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans      &trans                                               &kp LS(APOS)  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
