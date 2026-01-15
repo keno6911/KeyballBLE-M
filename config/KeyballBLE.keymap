@@ -71,10 +71,10 @@
 
         default_layer {
             bindings = <
-&kp TAB     &kp Q            &kp W         &kp E         &kp R        &kp T                                 &kp Y      &kp U  &kp I      &kp O    &kp P           &kp BACKSPACE
-&kp LCTRL   &kp A            &kp S         &kp D         &kp F        &kp G        &mkp MCLK    &kp DELETE  &kp H      &kp J  &kp K      &kp L    &kp LS(SLASH)   &kp ENTER
-&kp LSHFT   &kp Z            &kp X         &kp C         &kp V        &kp B        &mkp RCLK    &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH        &kp RSHFT
-&kp ESCAPE  &kp PRINTSCREEN  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE  &lt 6 SPACE  &mkp LCLK    &kp GRAVE   &lt 7 DEL                             &kp LS(INT_RO)  &kp RCTRL
+&kp TAB    &kp Q            &kp W         &kp E         &kp R        &kp T                                 &kp Y      &kp U  &kp I      &kp O    &kp P           &kp BACKSPACE
+&kp LCTRL  &kp A            &kp S         &kp D         &kp F        &kp G        &mkp MCLK    &kp DELETE  &kp H      &kp J  &kp K      &kp L    &kp LS(SLASH)   &kp ENTER
+&kp LSHFT  &kp Z            &kp X         &kp C         &kp V        &kp B        &mkp RCLK    &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH        &kp RSHFT
+&kp LCTRL  &kp PRINTSCREEN  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE  &lt 6 SPACE  &mkp LCLK    &kp GRAVE   &lt 7 DEL                             &kp LS(INT_RO)  &kp RCTRL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
