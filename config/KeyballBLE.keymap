@@ -71,10 +71,10 @@
 
         default_layer {
             bindings = <
-&kp TAB     &kp Q            &kp W         &kp E         &kp R        &kp T                                    &kp Y      &kp U  &kp I      &kp O    &kp P           &kp MINUS
-&kp LCTRL   &kp A            &kp S         &kp D         &kp F        &kp G        &mkp MCLK    &kp DELETE     &kp H      &kp J  &kp K      &kp L    &kp SEMI        &kp APOS
-&kp LSHFT   &kp Z            &kp X         &kp C         &kp V        &kp B        &mkp RCLK    &kp B          &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH        &kp RSHFT
-&kp ESCAPE  &kp PRINTSCREEN  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE  &lt 6 SPACE  &mkp LCLK    &kp BACKSPACE  &kp ENTER                             &kp LS(INT_RO)  &kp RCTRL
+&kp TAB     &kp Q            &kp W         &kp E         &kp R        &kp T                                 &kp Y        &kp U  &kp I      &kp O    &kp P           &kp BACKSPACE
+&kp LCTRL   &kp A            &kp S         &kp D         &kp F        &kp G        &mkp MCLK    &kp DELETE  &kp H        &kp J  &kp K      &kp L    &kp COLON       &kp ENTER
+&kp LSHFT   &kp Z            &kp X         &kp C         &kp V        &kp B        &mkp RCLK    &kp B       &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH        &kp RSHFT
+&kp ESCAPE  &kp PRINTSCREEN  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE  &lt 6 SPACE  &mkp LCLK    &kp GRAVE   &lt 7 ENTER                             &kp LS(INT_RO)  &kp RCTRL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -127,12 +127,23 @@
             >;
         };
 
-        layer_6 {
+        hidari {
             bindings = <
 &mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                         &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp LEFT_BRACKET   &kp INT_YEN
 &kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER           &msc SCRL_UP    &trans    &trans      &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET  &enmark
-&trans            &kp SEMI  &kp APOS      &kp MINUS  &kp EQUAL           &msc SCRL_DOWN  &trans    &kp PERIOD  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(INT_RO)     &trans
+&trans            &kp SEMI  &kp APOS      &kp MINUS  &kp EQUAL           &msc SCRL_DOWN  &trans    &kp PERIOD  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans             &trans
 &trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans      &trans                                               &trans             &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
+        };
+
+        migi {
+            bindings = <
+&mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                         &kp EQUAL  &kp N7        &kp N8        &kp N9        &kp MINUS     &kp LS(MINUS)
+&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER           &msc SCRL_UP    &trans    &trans      &trans     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(SEMI)  &kp LS(APOS)
+&trans            &kp SEMI  &kp APOS      &kp MINUS  &kp EQUAL           &msc SCRL_DOWN  &trans    &kp PERIOD  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp FSLH      &kp MINUS
+&trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans      &trans                                               &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(K_SCROLL_UP) LC(K_SCROLL_DOWN)>;
