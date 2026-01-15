@@ -1,7 +1,0 @@
-# zmk/app/dts/bindings/pixart,pmw3610.yml
-properties:
-  input-processors:
-    description: "Input processors phandle array for ZMK input processors"
-    type: array
-    items:
-      - $ref: /schemas/phandle.yaml
