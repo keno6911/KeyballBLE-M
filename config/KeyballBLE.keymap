@@ -44,6 +44,27 @@
             bindings = <&kp UNDERSCORE>;
             label = "UNDER";
         };
+
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp K &kp N1 &kp N9 &kp N0 &kp N0 &kp N9 &kp N1 &kp K &kp LS(K) &kp AT>;
+            label = "PASS";
+        };
+
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp A &kp W &kp A &kp S &kp A &kp K &kp I &kp DOT &kp K &kp E &kp N &kp O &kp AT &kp N &kp E &kp S &kp I &kp C &kp DOT &kp C &kp O &kp M>;
+            label = "MAIL";
+        };
+
+        Password: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(P) &kp AT &kp S &kp S &kp W &kp N0 &kp R &kp D>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -71,10 +92,10 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q            &kp W         &kp E         &kp R        &kp T                                 &kp Y      &kp U  &kp I      &kp O    &kp P           &kp BACKSPACE
-&kp LCTRL  &kp A            &kp S         &kp D         &kp F        &kp G        &mkp MCLK    &kp DELETE  &kp H      &kp J  &kp K      &kp L    &kp LS(SLASH)   &kp ENTER
-&kp LSHFT  &kp Z            &kp X         &kp C         &kp V        &kp B        &mkp RCLK    &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH        &kp RSHFT
-&kp LCTRL  &kp PRINTSCREEN  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE  &lt 6 SPACE  &mkp LCLK    &kp GRAVE   &lt 7 DEL                             &kp LS(INT_RO)  &kp RCTRL
+&kp TAB    &kp Q            &kp W         &kp E         &kp R        &kp T                                  &kp Y      &kp U  &kp I      &kp O    &kp P           &kp BACKSPACE
+&kp LCTRL  &kp A            &kp S         &kp D         &kp F        &kp G        &mkp MCLK    &kp DELETE   &kp H      &kp J  &kp K      &kp L    &kp LS(SLASH)   &kp ENTER
+&kp LSHFT  &kp Z            &kp X         &kp C         &kp V        &kp B        &mkp RCLK    &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH        &kp RSHFT
+&kp LCTRL  &kp PRINTSCREEN  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE  &lt 6 SPACE  &mkp LCLK    &lt 5 GRAVE  &lt 7 DEL                             &kp LS(INT_RO)  &kp RCTRL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -120,9 +141,9 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &pass
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &mail
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &Password
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans  &trans
             >;
         };
