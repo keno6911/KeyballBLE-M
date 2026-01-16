@@ -17,8 +17,7 @@
             ;
 };
 
-/ {
-    
+/ { 
     // ★ 「打鍵直後はマウスレイヤーを起動しない」等のチューニングはここで
     my_temp_layer: my_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
