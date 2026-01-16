@@ -18,18 +18,6 @@
 };
 
 / { 
-    // ★ 「打鍵直後はマウスレイヤーを起動しない」等のチューニングはここで
-    my_temp_layer: my_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-
-        // 直前にキー入力があってから 200ms 未満なら起動しない（誤作動抑制）
-        require-prior-idle-ms = <200>;
-
-        // 例：J のキー位置を除外にしたい場合は下を有効化（番号は実配列に合わせて）
-        // excluded-positions = <XX>;
-    };
-
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
