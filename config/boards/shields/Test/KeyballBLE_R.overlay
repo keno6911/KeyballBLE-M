@@ -23,7 +23,7 @@
         device = <&trackball>;
        // トラックボールの入力が来たら layer 4 を有効化し、
        // 無入力 1500ms で自動解除（好みで ms を調整）
-        input-processors = <&zip_temp_layer 4 300>;
+        input-processors = <&zip_temp_layer 4 500>;
 
     };
 };
