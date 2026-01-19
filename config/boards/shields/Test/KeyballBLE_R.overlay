@@ -28,7 +28,7 @@
         // 層切替なしでそのまま流す
         input-processors = <&zip_passthrough>;
 
-    //};
+    };
 };
 
 &pinctrl {
