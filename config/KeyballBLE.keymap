@@ -152,7 +152,7 @@
         hidari {
             bindings = <
 &mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                     &trans            &kp MINUS                &kp EQUAL  &kp INT_YEN  &kp LEFT_BRACKET  &trans
-&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &trans              &msc SCRL_UP    &trans    &trans  &kp LS(NUMBER_1)  &kp SEMICOLON            &kp COLON  &kp RBKT     &enmark           &trans
+&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &trans              &msc SCRL_UP    &trans    &trans  &kp LS(NUMBER_1)  &kp SEMICOLON            &kp APOS   &kp RBKT     &enmark           &trans
 &trans            &trans    &trans        &trans     &trans              &msc SCRL_DOWN  &trans    &trans  &trans            &kp LS(INTERNATIONAL_1)  &trans     &trans       &trans            &trans
 &trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans  &trans                                                             &trans            &trans
             >;
