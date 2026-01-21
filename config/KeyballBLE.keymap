@@ -142,8 +142,8 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 2    &Password  &mail   &pass   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans     &trans  &trans  &trans
+&trans  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9                    &bt BT_SEL 0  &bt BT_SEL 2    &Password  &mail   &pass   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &trans    &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans          &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                           &trans  &trans
             >;
@@ -151,10 +151,10 @@
 
         hidari {
             bindings = <
-&mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                     &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LBKT  &kp INT_YEN  &trans
-&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER           &msc SCRL_UP    &trans    &trans  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp RBKT  &enmark      &trans
-&trans            &kp SEMI  &kp APOS      &kp MINUS  &kp EQUAL           &msc SCRL_DOWN  &trans    &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp SEMI  &kp APOS     &trans
-&trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans  &trans                                                          &trans       &trans
+&mt ESCAPE GRAVE  &kp F2    &kp UP_ARROW  &kp F5     &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                     &trans  &kp MINUS                &kp EQUAL  &kp INT_YEN  &kp LEFT_BRACKET  &trans
+&kp LS(NUMBER_1)  &kp LEFT  &kp DOWN      &kp RIGHT  &trans              &msc SCRL_UP    &trans    &trans  &trans  &kp SEMICOLON            &kp COLON  &kp RBKT     &enmark           &trans
+&trans            &trans    &trans        &trans     &trans              &msc SCRL_DOWN  &trans    &trans  &trans  &kp LS(INTERNATIONAL_1)  &trans     &trans       &trans            &trans
+&trans            &trans    &trans        &trans     &trans              &trans          &trans    &trans  &trans                                                   &trans            &trans
             >;
         };
 
